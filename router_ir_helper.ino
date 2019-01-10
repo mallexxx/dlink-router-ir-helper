@@ -48,7 +48,8 @@ void serialPrint(int val, int sys) {
 void setup() {
   mySerial.begin(9600);
   Serial.begin(57600);
-
+  irrecv.enableIRIn();
+  
   pinMode(4, OUTPUT);
   pinMode(5, OUTPUT);
   pinMode(6, OUTPUT);
